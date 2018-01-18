@@ -1,4 +1,4 @@
-//
+
 public class swapMethods {
 
 	public static void swap(int[] elements, int index1, int index2)
