@@ -4,8 +4,8 @@ public class sortingAlgorithms {
 	
 	public static void bubbleSort(String[] list1)
 	{
-		int swapCount = 0;
-		while (swapCount<0)
+		int swapCount = 1;
+		while (swapCount>0)
 		{
 			swapCount = 0;
 			
@@ -26,23 +26,17 @@ public class sortingAlgorithms {
 			
 	}
 	
-	// 6    2    8    5
+	
 	public static void selectionSort(double[] list1)
 	{
-		int swapCount = 0;
-		while (swapCount<0)
+		for (int i = 0; i<list1.length-1;)
 		{
-			swapCount = 0;
-			
-			for (int i = 0; i<list1.length-1;)
+			double min=list1[0];			
+			if (min>list1[i])
 			{
-				if (list1[0]>list1[i])
-				{
-					swapMethods.swap(list1, 0, i);
-					swapCount++;
-					i++;
-					list1[0] = list1[i];
-				}
+				swapMethods.swap(list1, 0, i);
+				i++;
+				min = list1[i];
 			}
 		}
 	}
