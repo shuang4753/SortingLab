@@ -21,13 +21,13 @@ public class sortingAlgorithms {
 	}
 	
 	
-	public static void insertionSort(int[] list1)
+	//public static void insertionSort(int[] list1)
 	{	
 			
 	}
 	
 	
-	public static void selectionSort(double[] list1)
+	/*public static void selectionSort(double[] list1)
 	{
 		for (int i = 0; i<list1.length-1;)
 		{
@@ -39,5 +39,5 @@ public class sortingAlgorithms {
 				min = list1[i];
 			}
 		}
-	}
+	}*/
 }
