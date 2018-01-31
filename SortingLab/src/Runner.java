@@ -10,8 +10,8 @@ public class Runner {
 		String[] test3 = {"zebra", "tortilla", "abba", "foo", "bar", "aba"};
 		
 		//Insertion Sort Test
-		/*long start= System.nanoTime();
-		sortingAlgorithms.insertionSort(test1);
+		long start= System.nanoTime();
+		//sortingAlgorithms.insertionSort(test1);
 		long end = System.nanoTime();
 		long time = end - start;
 		System.out.println("Test1 took: " + time + "nanoseconds");
@@ -19,17 +19,17 @@ public class Runner {
 		
 		//Selection Sort Test
 		start = System.nanoTime();
-		//sortingAlgorithms.selectionSort(test2);
+		sortingAlgorithms.selectionSort(test2);
 		end = System.nanoTime();
 		time = end - start;
 		System.out.println("Test2 took: " + time + "nanoseconds");
-		System.out.println(Arrays.toString(test2));*/
+		System.out.println(Arrays.toString(test2));
 		
 		//Bubble Sort Test
-		long start = System.nanoTime();
+		start = System.nanoTime();
 		sortingAlgorithms.bubbleSort(test3);
-		long end = System.nanoTime();
-		long time = end - start;
+		end = System.nanoTime();
+		time = end - start;
 		System.out.println("Test3 took: " + time + "nanoseconds");
 		System.out.println(Arrays.toString(test3));
 	}

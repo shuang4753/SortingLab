@@ -18,7 +18,7 @@ public class swapMethods {
 	public static void swap(String[] elements, int index1, int index2)
 	{
 		 String temp=elements[index1];
-		 elements[index1].equals(elements[index2]);
-		 elements[index2].equals(temp);
+		 elements[index1]=(elements[index2]);
+		 elements[index2]=(temp);
 	}
 }
