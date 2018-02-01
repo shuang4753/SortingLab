@@ -1,5 +1,9 @@
 
 public class swapMethods {
+	/*Author: Simon Huang
+	 *Date: 2/1/18
+	 *Lab: SortingLab 
+	 */
 
 	public static void swap(int[] elements, int index1, int index2)
 	{

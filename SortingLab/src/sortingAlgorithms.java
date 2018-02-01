@@ -1,5 +1,9 @@
 
 public class sortingAlgorithms {
+	/*Author: Simon Huang
+	 *Date: 2/1/18
+	 *Lab: SortingLab 
+	 */
 
 	
 	public static void bubbleSort(String[] list1)
@@ -31,11 +35,18 @@ public class sortingAlgorithms {
 			
 			for (int x =0; x<list1.length-1; x++)
 			{
-				int indexOfMin=0;
-				if (list1[indexOfMin]>list1[x+1])
+				int indexOfMin=x;
 				{
-					swapMethods.swap(list1, x+1, x);
-					swapCount++;
+					for (int y = x+1; y<list1.length; y++) 
+						{
+							if (list1[indexOfMin]>list1[x+1])
+							{
+								swapMethods.swap(list1, x, y);
+								swapCount++;
+							}
+						}
+							
+					indexOfMin++;
 				}
 			}
 		}

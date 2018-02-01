@@ -1,5 +1,8 @@
 import java.util.Arrays;
-
+/*Author: Simon Huang
+ *Date: 2/1/18
+ *Lab: SortingLab 
+ */
 public class Runner {
 
 	public static void main(String[] args)
@@ -11,7 +14,7 @@ public class Runner {
 		
 		//Insertion Sort Test
 		long start= System.nanoTime();
-		//sortingAlgorithms.insertionSort(test1);
+		sortingAlgorithms.insertionSort(test1);
 		long end = System.nanoTime();
 		long time = end - start;
 		System.out.println("Test1 took: " + time + "nanoseconds");
