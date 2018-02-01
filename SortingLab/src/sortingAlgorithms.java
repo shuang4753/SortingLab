@@ -28,8 +28,8 @@ public class sortingAlgorithms {
 	
 	public static void insertionSort(int[] list1)
 	{
-		int swapCount = 1;
-		while (swapCount != 0)
+		
+		/*while (swapCount != 0)
 		{
 			swapCount = 0;
 			
@@ -47,6 +47,21 @@ public class sortingAlgorithms {
 						}
 							
 					indexOfMin++;
+				}
+			}
+		}*/
+		
+		for (int x =0; x<list1.length-1; x++)
+		{
+			for( int y=x; x<0;	x-- )
+			{
+				if (list1[y]<list1[y-1])
+				{
+					swapMethods.swap(list1, y, y-1);
+				}
+				else 
+				{
+					break;
 				}
 			}
 		}
