@@ -28,34 +28,11 @@ public class sortingAlgorithms {
 	
 	public static void insertionSort(int[] list1)
 	{
-		
-		/*while (swapCount != 0)
+		for (int x=1; x<list1.length; x++)
 		{
-			swapCount = 0;
-			
-			for (int x =0; x<list1.length-1; x++)
+			for(int y=x; y>0; y-- )
 			{
-				int indexOfMin=x;
-				{
-					for (int y = x+1; y<list1.length; y++) 
-						{
-							if (list1[indexOfMin]>list1[x+1])
-							{
-								swapMethods.swap(list1, x, y);
-								swapCount++;
-							}
-						}
-							
-					indexOfMin++;
-				}
-			}
-		}*/
-		
-		for (int x =0; x<list1.length-1; x++)
-		{
-			for( int y=x; x<0;	x-- )
-			{
-				if (list1[y]<list1[y-1])
+				if (list1[y] < list1[y-1])
 				{
 					swapMethods.swap(list1, y, y-1);
 				}
@@ -66,7 +43,7 @@ public class sortingAlgorithms {
 			}
 		}
 	}
-		
+	
 	
 	public static void selectionSort(double[] list1)
 	{
