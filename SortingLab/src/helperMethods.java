@@ -5,16 +5,34 @@ public class helperMethods {
 	 * Compare first two indices and then place in a new array, list3, the lower value.
 	 */
 	
-	public static int[] merge(int[] list1, int[] list2)
+	public static String[] merge(String[] list1, String[] list2)
 	{
 		int bigLength=list1.length+list2.length;
-		int[] list3 = new int[bigLength]; 
-		for (int x=0; x<(list3.length); x++)
+		String[] list3 = new String[bigLength]; 
+		int index1 = 0;
+		int index2 = 0;
+		for (int index3=0; index3<(list3.length); index3++)
 		{
-			if (list1[x]<list2[x+bigLength/2])
+			if (index1<list1.length) 
 			{
-				swapMethods.swap(list3, index1, index2);
+				if (list1[index1].compareTo(list2[index2])<0)
+				{
+					list3[index3]=list1[index1];
+					index1++;
+				}
 			}
+			
+			
+			if (index2<list2.length && index1<list1.length)
+			{
+				if (list1[index1].compareTo(list2[index2])>0)
+				{
+					list3[index3] = list2[index2];
+					index2++;
+				}
+			}
+			
 		}
+		return list3;
 	}
 }
