@@ -31,13 +31,13 @@ public class helperMethods {
 			
 			else
 			{
-				if (index1==list1.length-1 && index2<list2.length)
+				if (index2<list2.length)
 				{
 					list3[index3]=list2[index2];
 					index2++;
 				}
 				
-				if (index2==list2.length-1 && index1<list1.length)
+				if (index1<list1.length)
 				{
 					list3[index3]=list1[index1];
 					index1++;

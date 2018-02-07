@@ -8,45 +8,46 @@ public class Runner {
 	public static void main(String[] args)
 	{
 		//Testing arrays
-		int[] test1 = {1,4,4,5,2,4,3,17,0};
-		double[] test2 = {1.1, 4.1, 4.2, 5.0, 2.0, 4.0, 17.0, 0.0};
-		String[] test3 = {"zebra", "tortilla", "abba", "foo", "bar", "aba"};
-		String[] test4 = {"apple", "donut", "chicken"};
-		String[] test5 = {"think", "story", "motherboard"};
+		int[] insert1 = {1,4,4,5,2,4,3,17,0};
+		double[] selection2 = {1.1, 4.1, 4.2, 5.0, 2.0, 4.0, 17.0, 0.0};
+		String[] bubble3 = {"zebra", "tortilla", "abba", "foo", "bar", "aba"};
+		String[] merge1 = {"apple", "donut", "chicken", "lose"};
+		String[] merge2 = {"think", "story", "motherboard"};
+		
 		
 		
 		
 		//Insertion Sort Test
 		long start= System.nanoTime();
-		sortingAlgorithms.insertionSort(test1);
+		sortingAlgorithms.insertionSort(insert1);
 		long end = System.nanoTime();
 		long time = end - start;
 		System.out.println("Test1 took: " + time + "nanoseconds");
-		System.out.println(Arrays.toString(test1));
+		System.out.println(Arrays.toString(insert1));
 		
 		//Selection Sort Test
 		start = System.nanoTime();
-		sortingAlgorithms.selectionSort(test2);
+		sortingAlgorithms.selectionSort(selection2);
 		end = System.nanoTime();
 		time = end - start;
 		System.out.println("Test2 took: " + time + "nanoseconds");
-		System.out.println(Arrays.toString(test2));
+		System.out.println(Arrays.toString(selection2));
 		
 		//Bubble Sort Test
 		start = System.nanoTime();
-		sortingAlgorithms.bubbleSort(test3);
+		sortingAlgorithms.bubbleSort(bubble3);
 		end = System.nanoTime();
 		time = end - start;
 		System.out.println("Test3 took: " + time + "nanoseconds");
-		System.out.println(Arrays.toString(test3));
+		System.out.println(Arrays.toString(bubble3));
 		
 		//Merge Sort Test
 		start = System.nanoTime();
-		helperMethods.merge(test4, test5);
+		String[] merge3 = helperMethods.merge(merge1, merge2);
 		end = System.nanoTime();
 		time = end - start;
 		System.out.println("Test 4 took: " + time + "nanoseconds");
-		System.out.println(Arrays.toString(test4));
+		System.out.println(Arrays.toString(merge3));
 	}
 
 }
