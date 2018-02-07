@@ -6,6 +6,43 @@ public class sortingAlgorithms {
 	 */
 
 	
+	public static void insertionSort(int[] list1)
+	{
+		for (int x=1; x<list1.length; x++)
+		{
+			for(int y=x; y>0; y-- )
+			{
+				if (list1[y] < list1[y-1])
+				{
+					swapMethods.swap(list1, y, y-1);
+				}
+				else 
+				{
+					break;
+				}
+			}
+		}
+	}
+	
+
+	public static void selectionSort(double[] list1)
+	{
+		for (int x = 0; x<list1.length-1; x++)
+		{
+			int indexOfMin=x;
+			for (int y = x +1; y<list1.length; y++)
+			{
+				if(list1[indexOfMin]>list1[y])
+				{
+					 indexOfMin=y;
+				}
+			}
+			swapMethods.swap(list1, indexOfMin, x);
+		}
+		
+	}
+	
+	
 	public static void bubbleSort(String[] list1)
 	{
 		
@@ -26,39 +63,7 @@ public class sortingAlgorithms {
 	}
 	
 	
-	public static void insertionSort(int[] list1)
-	{
-		for (int x=1; x<list1.length; x++)
-		{
-			for(int y=x; y>0; y-- )
-			{
-				if (list1[y] < list1[y-1])
-				{
-					swapMethods.swap(list1, y, y-1);
-				}
-				else 
-				{
-					break;
-				}
-			}
-		}
-	}
 	
 	
-	public static void selectionSort(double[] list1)
-	{
-		for (int x = 0; x<list1.length-1; x++)
-		{
-			int indexOfMin=x;
-			for (int y = x +1; y<list1.length; y++)
-			{
-				if(list1[indexOfMin]>list1[y])
-				{
-					 indexOfMin=y;
-				}
-			}
-			swapMethods.swap(list1, indexOfMin, x);
-		}
-		
-	}
+	
 }
