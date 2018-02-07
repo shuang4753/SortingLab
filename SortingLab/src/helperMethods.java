@@ -11,6 +11,7 @@ public class helperMethods {
 		String[] list3 = new String[bigLength]; 
 		int index1 = 0;
 		int index2 = 0;
+		
 		for (int index3=0; index3<(list3.length); index3++)
 		{
 			if (index1<list1.length && index2<list2.length) 
@@ -21,7 +22,7 @@ public class helperMethods {
 					index1++;
 				}
 			
-				if (list1[index1].compareTo(list2[index2])>0)
+				else if (list1[index1].compareTo(list2[index2])>0)
 				{
 					list3[index3] = list2[index2];
 					index2++;
@@ -30,10 +31,21 @@ public class helperMethods {
 			
 			else
 			{
+				if (index1==list1.length-1 && index2<list2.length)
+				{
+					list3[index3]=list2[index2];
+					index2++;
+				}
 				
+				if (index2==list2.length-1 && index1<list1.length)
+				{
+					list3[index3]=list1[index1];
+					index1++;
+				}
 			}
-				
 		}
+		
 		return list3;
+		
 	}
 }
