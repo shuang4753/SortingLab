@@ -11,6 +11,10 @@ public class Runner {
 		int[] test1 = {1,4,4,5,2,4,3,17,0};
 		double[] test2 = {1.1, 4.1, 4.2, 5.0, 2.0, 4.0, 17.0, 0.0};
 		String[] test3 = {"zebra", "tortilla", "abba", "foo", "bar", "aba"};
+		String[] test4 = {"apple", "donut", "chicken"};
+		String[] test5 = {"think", "story", "motherboard"};
+		
+		
 		
 		//Insertion Sort Test
 		long start= System.nanoTime();
@@ -35,6 +39,14 @@ public class Runner {
 		time = end - start;
 		System.out.println("Test3 took: " + time + "nanoseconds");
 		System.out.println(Arrays.toString(test3));
+		
+		//Merge Sort Test
+		start = System.nanoTime();
+		helperMethods.merge(test4, test5);
+		end = System.nanoTime();
+		time = end - start;
+		System.out.println("Test 4 took: " + time + "nanoseconds");
+		System.out.println(Arrays.toString(test4));
 	}
 
 }
