@@ -4,7 +4,7 @@ public class sortingAlgorithms {
 	 *Date: 2/1/18
 	 *Lab: SortingLab 
 	 */
-
+//new and not broken
 	
 	public static void insertionSort(int[] list1)
 	{
