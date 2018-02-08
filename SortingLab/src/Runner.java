@@ -11,8 +11,8 @@ public class Runner {
 		int[] insert1 = {1,4,4,5,2,4,3,17,0};
 		double[] selection2 = {1.1, 4.1, 4.2, 5.0, 2.0, 4.0, 17.0, 0.0};
 		String[] bubble3 = {"zebra", "tortilla", "abba", "foo", "bar", "aba"};
-		String[] merge1 = {"apple", "donut", "chicken", "lose"};
-		String[] merge2 = {"think", "story", "motherboard"};
+		String[] merge1 = {"apple", "chicken", "donut", "lose"};
+		String[] merge2 = {"baby", "story", "think"};
 		
 		
 		

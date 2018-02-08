@@ -1,6 +1,6 @@
 
 public class helperMethods {
-//new
+
 	/*Precondition: list1 and list2 are sorted already
 	 * Compare first two indices and then place in a new array, list3, the lower value.
 	 */
@@ -22,7 +22,7 @@ public class helperMethods {
 					index1++;
 				}
 			
-				else if (list1[index1].compareTo(list2[index2])>0)
+				else 
 				{
 					list3[index3] = list2[index2];
 					index2++;
@@ -44,8 +44,55 @@ public class helperMethods {
 				}
 			}
 		}
-		
 		return list3;
-		
 	}
+	
+	/*Choose a pivot. Splits the array <list1> into two arrays where the values to the 
+	 * left of index of pivot is less than value of pivot
+	 * right of index of pivot is greater than value of pivot
+	 */
+	public static int[] partition(int[] list1)
+	{
+		int pivotIndex = 0;
+		int pivotValue = list1[pivotIndex];
+		int checkIndex = list1[list1.length-1];
+		
+		for (int x = list1.length-1; x > 0; x--)
+		{
+			
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
