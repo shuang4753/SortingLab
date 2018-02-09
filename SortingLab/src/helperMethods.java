@@ -51,17 +51,50 @@ public class helperMethods {
 	 * left of index of pivot is less than value of pivot
 	 * right of index of pivot is greater than value of pivot
 	 */
-	public static int[] partition(int[] list1)
+	public static int partition(int[] list1)
 	{
 		int pivotIndex = 0;
 		int pivotValue = list1[pivotIndex];
-		int checkIndex = list1[list1.length-1];
-		
-		for (int x = list1.length-1; x > 0; x--)
-		{
+		int checkIndex = list1.length-1;
+
+		while (pivotIndex != checkIndex)
+		{	
+			System.out.println(pivotIndex);
+			int checkValue = list1[checkIndex];
+			if (pivotIndex < checkIndex)
+			{
+				if (pivotValue < checkValue)		
+				{
+					checkIndex--;
+				}
+				
+				if (pivotValue > checkValue)
+				{
+					swapMethods.swap(list1, pivotIndex, checkIndex);
+					checkIndex=pivotIndex;
+					pivotIndex=checkIndex;
+					checkIndex++;
+				}
+			}
 			
+			else 
+			{
+				if (pivotValue > checkValue)		
+				{
+					checkIndex++;
+				}
+				
+				if (pivotValue < checkValue)
+				{
+					swapMethods.swap(list1, pivotIndex, checkIndex);
+					checkIndex=pivotIndex;
+					checkIndex--;
+				}
+			}
 		}
+		return pivotIndex;
 	}
+
 	
 	
 	
