@@ -13,7 +13,7 @@ public class Runner {
 		String[] bubble3 = {"zebra", "tortilla", "abba", "foo", "bar", "aba"};
 		String[] merge1 = {"babe", "donut", "kick", "lose"};
 		String[] merge2 = {"apple", "gate", "think"};
-		int[] quick1 = {7,1,6,8,2,10,4};
+		int[] quick1 = {3,4,2,7,12,22,0,1};
 	
 		//Insertion Sort Test
 		long start= System.nanoTime();
@@ -21,7 +21,8 @@ public class Runner {
 		long end = System.nanoTime();
 		long time = end - start;
 		System.out.println("InsertionSort took: " + time + "nanoseconds");
-		System.out.println(Arrays.toString(insert1));
+		System.out.println(Arrays.toString(insert1) + "\n");
+		
 		
 		//Selection Sort Test
 		start = System.nanoTime();
@@ -29,7 +30,8 @@ public class Runner {
 		end = System.nanoTime();
 		time = end - start;
 		System.out.println("SelectionSort took: " + time + "nanoseconds");
-		System.out.println(Arrays.toString(selection2));
+		System.out.println(Arrays.toString(selection2) + "\n");
+		
 		
 		//Bubble Sort Test
 		start = System.nanoTime();
@@ -37,15 +39,17 @@ public class Runner {
 		end = System.nanoTime();
 		time = end - start;
 		System.out.println("BubbleSort took: " + time + "nanoseconds");
-		System.out.println(Arrays.toString(bubble3));
+		System.out.println(Arrays.toString(bubble3) + "\n");
+		
 		
 		//Merge Sort Test
 		start = System.nanoTime();
 		String[] merge3 = helperMethods.merge(merge1, merge2);
 		end = System.nanoTime();
 		time = end - start;
-		System.out.println("merge took: " + time + "nanoseconds");
-		System.out.println(Arrays.toString(merge3));
+		System.out.println("Merge took: " + time + "nanoseconds");
+		System.out.println(Arrays.toString(merge3) + "\n");
+		
 		
 		//Partition Sort Test
 		start = System.nanoTime();
@@ -54,7 +58,8 @@ public class Runner {
 		time = end - start;
 		System.out.println("Partition took: " + time + "nanoseconds");
 		System.out.println("Final Pivot Position: " + pivotFinalPos); 
-		System.out.println(Arrays.toString(quick1));
+		System.out.println(Arrays.toString(quick1) + "\n");
+		
 	}
 
 }
