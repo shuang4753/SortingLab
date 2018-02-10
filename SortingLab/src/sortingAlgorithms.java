@@ -69,4 +69,11 @@ public class sortingAlgorithms {
 	}
 
 	
+	public static void quickSort(int[] list1, int low, int high)
+	{
+		if (low < high)
+		{
+			int pi = helperMethods.partition(list1);
+		}
+	}
 }

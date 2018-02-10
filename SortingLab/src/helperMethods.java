@@ -51,6 +51,7 @@ public class helperMethods {
 	 * left of index of pivot is less than value of pivot
 	 * right of index of pivot is greater than value of pivot
 	 */
+	
 	public static int partition(int[] list1)
 	{
 		int pivotIndex = 0;
@@ -67,7 +68,7 @@ public class helperMethods {
 					checkIndex--;
 				}
 				
-				else if (pivotValue > checkValue)
+				if (pivotValue > checkValue)
 				{
 					swapMethods.swap(list1, pivotIndex, checkIndex);
 					int temp = pivotIndex;
@@ -85,7 +86,7 @@ public class helperMethods {
 					checkIndex++;
 				}
 				
-				else if (pivotValue < checkValue)
+				if (pivotValue < checkValue)
 				{
 					swapMethods.swap(list1, pivotIndex, checkIndex);
 					int temp = pivotIndex;
