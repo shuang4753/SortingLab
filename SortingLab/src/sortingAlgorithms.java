@@ -1,4 +1,4 @@
-
+import java.util.Arrays;
 public class sortingAlgorithms {
 	/*Author: Simon Huang
 	 *Date: 2/1/18
@@ -63,17 +63,19 @@ public class sortingAlgorithms {
 	}
 	
 	
-	public static void mergeSort(int[] list1, int[] list2)
+	public static String[] mergeSort(String[] list)
 	{
-		
+		if (list.length<=1)
+		{
+			return list;
+		}
+
+			String left[] = Arrays.copyOfRange(list,0,1-list.length/2); 
+			String right[] = Arrays.copyOfRange(list,1-list.length/2,list.length-1);
+			
+		return helperMethods.merge(mergeSort(left), mergeSort(right));
 	}
 
 	
-	public static void quickSort(int[] list1, int low, int high)
-	{
-		if (low < high)
-		{
-			int pi = helperMethods.partition(list1);
-		}
-	}
+	
 }
