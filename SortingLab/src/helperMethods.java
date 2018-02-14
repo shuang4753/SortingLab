@@ -51,12 +51,11 @@ public class helperMethods {
 	 * left of index of pivot is less than value of pivot
 	 * right of index of pivot is greater than value of pivot
 	 */
-	
-	public static int partition(int[] list1)
+	public static int partition(int[] list1, int front, int back)
 	{
-		int pivotIndex = 0;
+		int pivotIndex = front;
 		int pivotValue = list1[pivotIndex];
-		int checkIndex = list1.length-1;
+		int checkIndex = back - 1;
 
 		while (pivotIndex != checkIndex)
 		{	
@@ -98,9 +97,6 @@ public class helperMethods {
 		}
 		return pivotIndex;
 	}
-
-	
-	
 	
 	
 	

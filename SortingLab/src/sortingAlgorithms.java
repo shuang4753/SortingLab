@@ -76,6 +76,14 @@ public class sortingAlgorithms {
 		return helperMethods.merge(mergeSort(left), mergeSort(right));
 	}
 
-	
+	public static void quickSort(int[] list1, int front, int back)
+	{
+		if (back > front)
+		{
+			int pivotIndex = helperMethods.partition(list1, front, back);
+			quickSort(list1, front, pivotIndex-1);
+			quickSort(list1, pivotIndex+1, back);
+		}	
+	}
 	
 }
