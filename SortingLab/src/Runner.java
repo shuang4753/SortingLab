@@ -12,7 +12,8 @@ public class Runner {
 		double[] selection2 = {1.1, 4.1, 4.2, 5.0, 2.0, 4.0, 17.0, 0.0};
 		String[] bubble3 = {"zebra", "tortilla", "abba", "foo", "bar", "aba"};
 		String[] merge1 = {"babe", "kick", "donut", "lose", "apple", "gate", "think"};
-		int[] quick1 = {5,4,2,7,12,22,0,1};
+		int[] quick1 = { 20, 16, 18, 2, 3 , 4};
+				
 	
 		//Insertion Sort Test
 		long start= System.nanoTime();
@@ -52,13 +53,14 @@ public class Runner {
 		
 		//QuickSort Test
 		start = System.nanoTime();
-		sortingAlgorithms.quickSort(quick1, front, back);
+		helperMethods.partition(quick1, 0, quick1.length);
+		System.out.println(Arrays.toString(quick1) + "\n");
+		sortingAlgorithms.quickSort(quick1, 0, quick1.length);
 		end = System.nanoTime();
 		time = end - start;
 		System.out.println("QuickSort took: " + time + "nanoseconds");
-		System.out.println("Final Pivot Position: " + pivotFinalPos); 
 		System.out.println(Arrays.toString(quick1) + "\n");
 		
 	}
-
+	
 }

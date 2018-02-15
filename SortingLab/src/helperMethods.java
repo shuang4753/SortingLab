@@ -55,7 +55,7 @@ public class helperMethods {
 	{
 		int pivotIndex = front;
 		int pivotValue = list1[pivotIndex];
-		int checkIndex = back - 1;
+		int checkIndex = back -1;
 
 		while (pivotIndex != checkIndex)
 		{	
@@ -79,6 +79,9 @@ public class helperMethods {
 			
 			else 
 			{
+				
+				
+				
 				if (pivotValue > checkValue)		
 				{
 					
