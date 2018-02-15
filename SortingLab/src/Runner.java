@@ -12,7 +12,7 @@ public class Runner {
 		double[] selection2 = {1.1, 4.1, 4.2, 5.0, 2.0, 4.0, 17.0, 0.0};
 		String[] bubble3 = {"zebra", "tortilla", "abba", "foo", "bar", "aba"};
 		String[] merge1 = {"babe", "kick", "donut", "lose", "apple", "gate", "think"};
-		int[] quick1 = { 20, 16, 18, 2, 3 , 4};
+		int[] quick1 = {21, 20, 3, 4,16};
 				
 	
 		//Insertion Sort Test
