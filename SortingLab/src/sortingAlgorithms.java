@@ -65,13 +65,12 @@ public class sortingAlgorithms {
 	
 	public static String[] mergeSort(String[] list)
 	{
-		if (list.length<=1)
+		if (list.length==1)
 		{
 			return list;
 		}
-
-			String left[] = Arrays.copyOfRange(list,0,1-list.length/2); 
-			String right[] = Arrays.copyOfRange(list,1-list.length/2,list.length-1);
+		String left[] = Arrays.copyOfRange(list,0,list.length/2); 
+		String right[] = Arrays.copyOfRange(list,list.length/2,list.length);
 			
 		return helperMethods.merge(mergeSort(left), mergeSort(right));
 	}
@@ -80,6 +79,7 @@ public class sortingAlgorithms {
 	{
 		if (back > front)
 		{
+			
 			int pivotIndex = helperMethods.partition(list1, front, back);
 			quickSort(list1, front, pivotIndex-1);
 			quickSort(list1, pivotIndex+1, back);

@@ -55,7 +55,7 @@ public class helperMethods {
 	{
 		int pivotIndex = front;
 		int pivotValue = list1[pivotIndex];
-		int checkIndex = back -1;
+		int checkIndex = back;
 
 		while (pivotIndex != checkIndex)
 		{	
@@ -67,7 +67,7 @@ public class helperMethods {
 					checkIndex--;
 				}
 				
-				if (pivotValue > checkValue)
+				if (pivotValue >= checkValue)
 				{
 					swapMethods.swap(list1, pivotIndex, checkIndex);
 					int temp = pivotIndex;
@@ -79,16 +79,13 @@ public class helperMethods {
 			
 			else 
 			{
-				
-				
-				
 				if (pivotValue > checkValue)		
 				{
 					
 					checkIndex++;
 				}
 				
-				if (pivotValue < checkValue)
+				if (pivotValue <= checkValue)
 				{
 					swapMethods.swap(list1, pivotIndex, checkIndex);
 					int temp = pivotIndex;
