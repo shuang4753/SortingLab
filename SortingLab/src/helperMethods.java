@@ -1,6 +1,12 @@
 
 public class helperMethods {
 
+	/*Author: Simon Huang
+	 *Date: 2/16/18
+	 *Lab: SortingLab 3.3 Final Sort
+	 */
+	
+	
 	/*Precondition: list1 and list2 are sorted already
 	 * Compare first two indices and then place in a new array, list3, the lower value.
 	 */
@@ -45,7 +51,7 @@ public class helperMethods {
 			}
 		}
 		return list3;
-	}
+}
 	
 	/*Choose a pivot. Splits the array <list1> into two arrays where the values to the 
 	 * left of index of pivot is less than value of pivot
@@ -97,35 +103,4 @@ public class helperMethods {
 		}
 		return pivotIndex;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }

@@ -1,11 +1,9 @@
 import java.util.Arrays;
 public class sortingAlgorithms {
 	/*Author: Simon Huang
-	 *Date: 2/1/18
-	 *Lab: SortingLab 
+	 *Date: 2/16/18
+	 *Lab: SortingLab 3.3 Final Sort
 	 */
-//new and not broken
-	
 	public static void insertionSort(int[] list1)
 	{
 		for (int x=1; x<list1.length; x++)
@@ -69,9 +67,10 @@ public class sortingAlgorithms {
 		{
 			return list;
 		}
+		
 		String left[] = Arrays.copyOfRange(list,0,list.length/2); 
 		String right[] = Arrays.copyOfRange(list,list.length/2,list.length);
-			
+				
 		return helperMethods.merge(mergeSort(left), mergeSort(right));
 	}
 
